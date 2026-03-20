@@ -138,6 +138,7 @@ sed -i -e "s/file_name_treatment_map/$file_name_treatment_map/g" docker-compose.
 sed -i -e "s/file_name_treatment_medication/$file_name_treatment_medication/g" docker-compose.yml
 sed -i -e "s/file_name_body_meas/$file_name_body_meas/g" docker-compose.yml
 sed -i -e "s/file_name_immunofixation/$file_name_immunofixation/g" docker-compose.yml
+sed -i -e "s/file_name_emd/$file_name_emd/g" docker-compose.yml
 
 sed -i -e "s/encoding_demographics/$encoding_demographics/g" docker-compose.yml
 sed -i -e "s/encoding_disease_admission/$encoding_disease_admission/g" docker-compose.yml
@@ -153,6 +154,7 @@ sed -i -e "s/encoding_treatment_map/$encoding_treatment_map/g" docker-compose.ym
 sed -i -e "s/encoding_treatment_medication/$encoding_treatment_medication/g" docker-compose.yml
 sed -i -e "s/encoding_body_meas/$encoding_body_meas/g" docker-compose.yml
 sed -i -e "s/encoding_immunofixation/$encoding_immunofixation/g" docker-compose.yml
+sed -i -e "s/encoding_emd/$encoding_emd/g" docker-compose.yml
 
 sed -i -e "s/verbosity_level/$verbosity_level/g" docker-compose.yml
 sed -i -e "s/image_tag/$image_tag/g" docker-compose.yml

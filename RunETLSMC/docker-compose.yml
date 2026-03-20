@@ -2,10 +2,10 @@ version: '3.5'
 
 services:
   etl:
-    image: harbor.honeur.org/etl-sourasky/etl:current
+    image: harbor.honeur.org/etl-sourasky/etl:image_tag
     volumes:
       - "./log:/log"
-      - "/Users/silviajimeneznavarro/Dev/data/Sourasky_ETL/v18:/data"
+      - "data_folder:/data"
     networks:
       - honeur-net
     environment:
@@ -13,41 +13,44 @@ services:
       DB_SERVER : "postgres"
       DB_PORT: "5432"
       DB_DBNAME: "OHDSI"
-      DB_SCHEMA: omopcdm
-      DB_USER: feder8_admin
-      DB_PASSWORD: feder8_admin
-      LAST_DATA_EXPORT: "2024-01-01"
-      VERBOSITY_LEVEL: INFO
-      DELIMITER: ;
+      DB_SCHEMA: db_schema
+      DB_USER: db_username
+      DB_PASSWORD: db_password
+      LAST_DATA_EXPORT: date_last_export
+      VERBOSITY_LEVEL: verbosity_level
+      DELIMITER: source_delimiter
       ETL_DATE_FORMAT: etl_date_format
-      ETL_FILENAME_DEMOGRAPHICS: "demographics.csv"
-      ETL_FILENAME_DISEASE_ADMISSION: "disease_admission.csv"
-      ETL_FILENAME_DISEASE_AMBULATORY: "disease_ambulatory.csv"
-      ETL_FILENAME_DISEASE_CHARACTERISTICS_MYELOMA: "disease_characteristics_myeloma.csv"
-      ETL_FILENAME_DISEASE_CHRONICDIAGNOSIS: "disease_chronicdiagnosis.csv"
-      ETL_FILENAME_DISEASE_HEMATODIAGNOSIS: "disease_hematodiagnosis.csv"
-      ETL_FILENAME_LAB_DATA_CYTOGENETICS: "lab_data_cytogenetics.csv"
-      ETL_FILENAME_LAB_DATA_FISH: "lab_data_fish.csv"
-      ETL_FILENAME_LAB_DATA_TEST: "lab_data_test.csv"
-      ETL_FILENAME_TREATMENT_CATO: "treatment_cato.csv"
-      ETL_FILENAME_TREATMENT_MAP: "treatment_map.csv"
-      ETL_FILENAME_TREATMENT_MEDICATION: "treatment_medication.csv"
-      ETL_FILENAME_BODY_MEAS: "body_measurements.csv"
-      ETL_FILENAME_IMMUNOFIXATION: "immunofixation.csv"
-      ETL_ENCODING_DEMOGRAPHICS: "utf-8"
-      ETL_ENCODING_DISEASE_ADMISSION: "utf-8"
-      ETL_ENCODING_DISEASE_AMBULATORY: "utf-8"
-      ETL_ENCODING_DISEASE_CHARACTERISTICS_MYELOMA: "utf-8"
-      ETL_ENCODING_DISEASE_CHRONICDIAGNOSIS: "utf-8"
-      ETL_ENCODING_DISEASE_HEMATODIAGNOSIS: "utf-8"
-      ETL_ENCODING_LAB_DATA_FISH: "utf-8"
-      ETL_ENCODING_LAB_DATA_CYTOGENETICS: "utf-8"
-      ETL_ENCODING_LAB_DATA_TEST: "utf-8"
-      ETL_ENCODING_TREATMENT_CATO: "utf-8"
-      ETL_ENCODING_TREATMENT_MAP: "utf-8"
-      ETL_ENCODING_TREATMENT_MEDICATION: "utf-8"
-      ETL_ENCODING_BODY_MEAS: "utf-8"
-      ETL_ENCODING_IMMUNOFIXATION: "utf-8"
+      ETL_FILENAME_DEMOGRAPHICS: file_name_demographics
+      ETL_FILENAME_DISEASE_ADMISSION: file_name_disease_admission
+      ETL_FILENAME_DISEASE_AMBULATORY: file_name_disease_ambulatory
+      ETL_FILENAME_DISEASE_CHARACTERISTICS_MYELOMA: file_name_disease_char
+      ETL_FILENAME_DISEASE_CHRONICDIAGNOSIS: file_name_disease_chronic
+      ETL_FILENAME_DISEASE_HEMATODIAGNOSIS: file_name_disease_hema
+      ETL_FILENAME_LAB_DATA_CYTOGENETICS: file_name_lab_cytogenetics
+      ETL_FILENAME_LAB_DATA_FISH: file_name_lab_fish
+      ETL_FILENAME_LAB_DATA_TEST: file_name_lab_test
+      ETL_FILENAME_TREATMENT_CATO: file_name_treatment_cato
+      ETL_FILENAME_TREATMENT_MAP: file_name_treatment_map
+      ETL_FILENAME_TREATMENT_MEDICATION: file_name_treatment_medication
+      ETL_FILENAME_BODY_MEAS: file_name_body_meas
+      ETL_FILENAME_IMMUNOFIXATION: file_name_immunofixation
+      ETL_FILENAME_EMD: file_name_emd
+      ETL_ENCODING_DEMOGRAPHICS: encoding_demographics
+      ETL_ENCODING_DISEASE_ADMISSION: encoding_disease_admission
+      ETL_ENCODING_DISEASE_AMBULATORY: encoding_disease_ambulatory
+      ETL_ENCODING_DISEASE_CHARACTERISTICS_MYELOMA: encoding_disease_char
+      ETL_ENCODING_DISEASE_CHRONICDIAGNOSIS: encoding_disease_chronic
+      ETL_ENCODING_DISEASE_HEMATODIAGNOSIS: encoding_disease_hema
+      ETL_ENCODING_LAB_DATA_FISH: encoding_lab_fish
+      ETL_ENCODING_LAB_DATA_CYTOGENETICS: encoding_lab_cytogenetics
+      ETL_ENCODING_LAB_DATA_TEST: encoding_lab_test
+      ETL_ENCODING_TREATMENT_CATO: encoding_treatment_cato
+      ETL_ENCODING_TREATMENT_MAP: encoding_treatment_map
+      ETL_ENCODING_TREATMENT_MEDICATION: encoding_treatment_medication
+      ETL_ENCODING_BODY_MEAS: encoding_body_meas
+      ETL_ENCODING_IMMUNOFIXATION: encoding_immunofixation
+      ETL_ENCODING_EMD: encoding_emd
+
 networks:
   honeur-net:
     external:
