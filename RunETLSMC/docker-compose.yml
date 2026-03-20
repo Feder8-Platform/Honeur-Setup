@@ -34,6 +34,7 @@ services:
       ETL_FILENAME_TREATMENT_MEDICATION: file_name_treatment_medication
       ETL_FILENAME_BODY_MEAS: file_name_body_meas
       ETL_FILENAME_IMMUNOFIXATION: file_name_immunofixation
+      ETL_FILENAME_EMD: file_name_emd
       ETL_ENCODING_DEMOGRAPHICS: encoding_demographics
       ETL_ENCODING_DISEASE_ADMISSION: encoding_disease_admission
       ETL_ENCODING_DISEASE_AMBULATORY: encoding_disease_ambulatory
@@ -48,6 +49,8 @@ services:
       ETL_ENCODING_TREATMENT_MEDICATION: encoding_treatment_medication
       ETL_ENCODING_BODY_MEAS: encoding_body_meas
       ETL_ENCODING_IMMUNOFIXATION: encoding_immunofixation
+      ETL_ENCODING_EMD: encoding_emd
+
 networks:
   honeur-net:
     external:

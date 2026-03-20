@@ -57,6 +57,9 @@ set /p "file_name_body_meas=Source file name - body measurements [%file_name_bod
 set "file_name_immunofixation=immunofixation.csv"
 set /p "file_name_immunofixation=Source file name - immunofixation [%file_name_immunofixation%]: "
 
+set "file_name_emd=true_emd.csv"
+set /p "file_name_emd=Source file name - emd [%file_name_emd%]: "
+
 set "encoding_demographics=Windows-1255"
 set /p "encoding_demographics=File encoding - demographics [%encoding_demographics%]: "
 
@@ -99,6 +102,9 @@ set /p "encoding_body_meas=File encoding - body measurements [%encoding_body_mea
 set "encoding_immunofixation=Windows-1255"
 set /p "encoding_immunofixation=File encoding - immunofixation [%encoding_immunofixation%]: "
 
+set "encoding_emd=Windows-1255"
+set /p "encoding_emd=File encoding - emd [%encoding_emd%]: "
+
 set "verbosity_level=INFO"
 set /p "verbosity_level=Output verbosity level [%verbosity_level%]: "
 
@@ -138,6 +144,7 @@ powershell -Command "(Get-Content docker-compose.yml) -creplace 'file_name_treat
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'file_name_treatment_medication', '%file_name_treatment_medication%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'file_name_body_meas', '%file_name_body_meas%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'file_name_immunofixation', '%file_name_immunofixation%' | Set-Content docker-compose.yml"
+powershell -Command "(Get-Content docker-compose.yml) -creplace 'file_name_emd', '%file_name_emd%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_demographics', '%encoding_demographics%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_disease_admission', '%encoding_disease_admission%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_disease_ambulatory', '%encoding_disease_ambulatory%' | Set-Content docker-compose.yml"
@@ -152,6 +159,7 @@ powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_treatm
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_treatment_medication', '%encoding_treatment_medication%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_body_meas', '%encoding_body_meas%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_immunofixation', '%encoding_immunofixation%' | Set-Content docker-compose.yml"
+powershell -Command "(Get-Content docker-compose.yml) -creplace 'encoding_emd', '%encoding_emd%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'verbosity_level', '%verbosity_level%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'image_tag', '%image_tag%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'date_last_export', '%date_last_export%' | Set-Content docker-compose.yml"
