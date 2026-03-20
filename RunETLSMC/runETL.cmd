@@ -57,6 +57,9 @@ set /p "file_name_body_meas=Source file name - body measurements [%file_name_bod
 set "file_name_immunofixation=immunofixation.csv"
 set /p "file_name_immunofixation=Source file name - immunofixation [%file_name_immunofixation%]: "
 
+set "file_name_emd=true_emd.csv"
+set /p "file_name_emd=Source file name - emd [%file_name_emd%]: "
+
 set "encoding_demographics=Windows-1255"
 set /p "encoding_demographics=File encoding - demographics [%encoding_demographics%]: "
 
@@ -98,6 +101,9 @@ set /p "encoding_body_meas=File encoding - body measurements [%encoding_body_mea
 
 set "encoding_immunofixation=Windows-1255"
 set /p "encoding_immunofixation=File encoding - immunofixation [%encoding_immunofixation%]: "
+
+set "encoding_emd=Windows-1255"
+set /p "encoding_emd=File encoding - emd [%encoding_emd%]: "
 
 set "verbosity_level=INFO"
 set /p "verbosity_level=Output verbosity level [%verbosity_level%]: "
