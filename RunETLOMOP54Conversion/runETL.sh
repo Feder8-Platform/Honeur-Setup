@@ -34,7 +34,7 @@ echo "SRC_PATIENT_CHECK_DB_SCHEMA=results" >> etl-runner.env
 echo "RUN_DQD=false" >> etl-runner.env
 #echo "OPENBLAS_NUM_THREADS=1" >> etl-runner.env
 
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLOMOP54Conversion/questions-omop54.json --output ${PWD}/questions-omop54.json
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLOMOP54Conversion/questions-omop54.json --output ${PWD}/questions-omop54.json
 
 echo "Run ETL"
 docker run \

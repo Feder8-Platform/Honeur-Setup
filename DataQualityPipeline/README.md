@@ -9,11 +9,11 @@
 2. Download the 'Data Quality Pipeline' run script:
     * Linux:
       ```
-       curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DataQualityPipeline/run-data-quality-pipeline.sh --output run-data-quality-pipeline.sh  && chmod +x run-data-quality-pipeline.sh
+       curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DataQualityPipeline/run-data-quality-pipeline.sh --output run-data-quality-pipeline.sh  && chmod +x run-data-quality-pipeline.sh
       ```
     * Windows:
       ```
-      curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DataQualityPipeline/run-data-quality-pipeline.cmd --output run-data-quality-pipeline.cmd
+      curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DataQualityPipeline/run-data-quality-pipeline.cmd --output run-data-quality-pipeline.cmd
       ```
 3. Execute the script (from the directory where the script is downloaded)
     * Linux:

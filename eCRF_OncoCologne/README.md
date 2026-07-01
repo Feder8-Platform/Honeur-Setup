@@ -10,11 +10,11 @@ The eCRF tool can be installed by downloading and running the installation scrip
 
 Windows:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/install_ecrf_oncocologne.cmd --output install_ecrf_oncocologne.cmd
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/install_ecrf_oncocologne.cmd --output install_ecrf_oncocologne.cmd
 ```
 Linux/MacOS:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/install_ecrf_oncocologne.sh --output install_ecrf_oncocologne.sh && chmod +x install_ecrf_oncocologne.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/install_ecrf_oncocologne.sh --output install_ecrf_oncocologne.sh && chmod +x install_ecrf_oncocologne.sh
 ```
 2. Run the installation script
 
@@ -36,7 +36,7 @@ The eCRF tool can be installed by downloading and running the installation scrip
 
 Linux:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/feder8_install.sh --output feder8_install.sh && chmod +x feder8_install.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/feder8_install.sh --output feder8_install.sh && chmod +x feder8_install.sh
 ```
 2. Run the installation script
 
@@ -52,11 +52,11 @@ To upgrade your existing installation, please follow the steps below.
 
 Windows:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/upgrade.cmd --output upgrade.cmd
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/upgrade.cmd --output upgrade.cmd
 ```
 Linux/MacOS:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/upgrade.sh --output upgrade.sh && chmod +x upgrade.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/upgrade.sh --output upgrade.sh && chmod +x upgrade.sh
 ```
 2. Run the upgrade script
 
@@ -78,17 +78,17 @@ The script will take a backup of your database.  The backup file will be stored 
 ## <a id="upgrade-installation-feder8"></a> Instructions for upgrading an existing installation to Feder8
 To upgrade your existing installation to Feder8, please follow the steps below.
 
-1. Install the local installation for Feder8. See [https://github.com/solventrix/Honeur-Setup/tree/master/local-installation/helper-scripts](https://github.com/solventrix/Honeur-Setup/tree/master/local-installation/helper-scripts) for more information.
+1. Install the local installation for Feder8. See [https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation/helper-scripts](https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation/helper-scripts) for more information.
 
 2. Download the upgrade script (**_feder8_upgrade.cmd_** for Windows or **_feder8_upgrade.sh_** for Linux/MacOS) by use of the following command:
 
 Windows:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/feder8_upgrade.cmd --output feder8_upgrade.cmd
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/feder8_upgrade.cmd --output feder8_upgrade.cmd
 ```
 Linux/MacOS:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/feder8_upgrade.sh --output feder8_upgrade.sh && chmod +x feder8_upgrade.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/feder8_upgrade.sh --output feder8_upgrade.sh && chmod +x feder8_upgrade.sh
 ```
 3. Run the upgrade script
 
@@ -115,11 +115,11 @@ A backup of the eCRF database can be taken by use of the backup script.
 
 Windows:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.cmd --output backup_ecrf_db.cmd
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.cmd --output backup_ecrf_db.cmd
 ```
 Linux/MacOS:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.sh --output backup_ecrf_db.sh && chmod +x backup_ecrf_db.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.sh --output backup_ecrf_db.sh && chmod +x backup_ecrf_db.sh
 ```
 2. Run the backup script
 
@@ -140,11 +140,11 @@ If needed, a backup of the eCRF database can be restored by use of the database 
 
 Windows:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/restore_ecrf_db.cmd --output restore_ecrf_db.cmd
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/restore_ecrf_db.cmd --output restore_ecrf_db.cmd
 ```
 Linux/MacOS:
 ```
-curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/restore_ecrf_db.sh --output restore_ecrf_db.sh && chmod +x restore_ecrf_db.sh
+curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/restore_ecrf_db.sh --output restore_ecrf_db.sh && chmod +x restore_ecrf_db.sh
 ```
 2. Run the restore script
 

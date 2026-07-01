@@ -8,9 +8,9 @@
 1. Open a terminal window
 2. Download the 'generate-analysis-table' script:
     * Linux:
-      ```curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DiTrAn/generate-analysis-table.sh --output generate-analysis-table.sh  && chmod +x generate-analysis-table.sh```
+      ```curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DiTrAn/generate-analysis-table.sh --output generate-analysis-table.sh  && chmod +x generate-analysis-table.sh```
     * Windows:
-      ```curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DiTrAn/generate-analysis-table.cmd --output generate-analysis-table.cmd```
+      ```curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DiTrAn/generate-analysis-table.cmd --output generate-analysis-table.cmd```
 3. Execute the script (from the directory where the script is downloaded)
     * Linux:
       ```./generate-analysis-table.sh```
@@ -24,15 +24,15 @@
 1. The local installation for HONEUR is installed and running
 2. The user has access to the HONEUR Harbor repository for DiTrAn
 3. DiTrAn is installed
-   1. If DiTrAn is not yet installed, follow the instructions <a href="https://github.com/solventrix/Honeur-Setup/tree/master/local-installation/separate-scripts#ditran" target="_blank">here</a>
+   1. If DiTrAn is not yet installed, follow the instructions <a href="https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation/separate-scripts#ditran" target="_blank">here</a>
 
 ## Execution steps
 1. Open a terminal window
 2. Download the 'DiTrAn data pipeline' run script:
     * Linux:
-      ```curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DiTrAn/prepare-ditran-data.sh --output prepare-ditran-data.sh  && chmod +x prepare-ditran-data.sh```
+      ```curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DiTrAn/prepare-ditran-data.sh --output prepare-ditran-data.sh  && chmod +x prepare-ditran-data.sh```
     * Windows:
-      ```curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/DiTrAn/prepare-ditran-data.cmd --output prepare-ditran-data.cmd```
+      ```curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/DiTrAn/prepare-ditran-data.cmd --output prepare-ditran-data.cmd```
 3. Execute the script (from the directory where the script is downloaded)
     * Linux:
       ```./prepare-ditran-data.sh```

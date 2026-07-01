@@ -7,7 +7,7 @@
 ## Execution steps
 1. Open a terminal window 
 2. Download the installation script:
-    * `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLUHL/runETL.sh --output runETL.sh && chmod +x runETL.sh`
+    * `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLUHL/runETL.sh --output runETL.sh && chmod +x runETL.sh`
 3. Execute the 'runETL.sh' script
 4. The script will request for:
     * the folder, filename and sheet of the Excel input file containing the raw data

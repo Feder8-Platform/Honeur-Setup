@@ -123,7 +123,7 @@ IF [%date_last_export%]==[] (
 )
 
 :next_step
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLSMC/docker-compose.yml --output docker-compose.yml
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLSMC/docker-compose.yml --output docker-compose.yml
 
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'data_folder', '%data_folder%' | Set-Content docker-compose.yml"
 powershell -Command "(Get-Content docker-compose.yml) -creplace 'db_schema', '%db_schema%' | Set-Content docker-compose.yml"

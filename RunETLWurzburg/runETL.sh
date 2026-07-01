@@ -14,7 +14,7 @@ LOG_FOLDER_HOST=${PWD}/log
 LOG_FOLDER_ETL=/script/etl/wurzburg/log
 
 echo "Download questions for ETL"
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/questions.json --output questions.json
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/questions.json --output questions.json
 
 echo "Pull ETL runner Docker image"
 docker pull $REGISTRY/$REPOSITORY/$IMAGE:$TAG

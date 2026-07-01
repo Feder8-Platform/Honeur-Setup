@@ -2,7 +2,7 @@ if [ $(docker ps --filter "name=etl" | grep -w 'etl' | wc -l) = 1 ]; then
   docker stop -t 1 etl && docker rm etl;
 fi
 
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLCCL/docker-compose.yml --output docker-compose.yml
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLCCL/docker-compose.yml --output docker-compose.yml
 
 read -p "Source server [172.19.4.246]: " source_server
 source_server=${source_server:-172.19.4.246}

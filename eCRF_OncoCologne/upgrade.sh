@@ -28,7 +28,7 @@ echo "Take database backup"
 if [[ ! -f backup_ecrf_db.sh ]]
 then
   echo "Download backup script"
-  curl -fsSL https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.sh --output backup_ecrf_db.sh && chmod +x backup_ecrf_db.sh
+  curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/eCRF_OncoCologne/backup_ecrf_db.sh --output backup_ecrf_db.sh && chmod +x backup_ecrf_db.sh
 fi
 POSTGRES_PASSWORD=$POSTGRES_PASSWORD ./backup_ecrf_db.sh
 

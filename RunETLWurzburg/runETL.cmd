@@ -16,7 +16,7 @@ echo "Pull ETL runner Docker image"
 docker pull %REGISTRY%/%REPOSITORY%/%IMAGE%:%TAG%
 
 echo "Download questions for ETL"
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/questions.json --output questions.json
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/questions.json --output questions.json
 
 echo "Create database schema 'wurzburg_final'"
 docker exec -it postgres psql -U postgres -d OHDSI -c "CREATE SCHEMA IF NOT EXISTS wurzburg_final AUTHORIZATION ohdsi_admin;GRANT USAGE ON SCHEMA wurzburg_final TO ohdsi_app;GRANT SELECT ON ALL TABLES IN SCHEMA wurzburg_final TO ohdsi_app;GRANT USAGE ON SCHEMA wurzburg_final TO ohdsi_admin;GRANT ALL ON ALL TABLES IN SCHEMA wurzburg_final TO ohdsi_admin;"

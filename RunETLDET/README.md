@@ -7,14 +7,14 @@
 4. The user has access to the HONEUR DET Harbor repository containing the ETL image.
 5. The HONEUR OMOP CDM database is running in a Docker container named `postgres`:
     * Check this by running `docker ps`. You should see the `postgres` container listed as running and healthy.
-    * See [https://github.com/solventrix/Honeur-Setup/tree/master/local-installation](https://github.com/solventrix/Honeur-Setup/tree/master/local-installation) for more info.
+    * See [https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation](https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation) for more info.
 6. An empty OMOP CDM v5.4 schema is present in the Postgres database
 
 ## Optional: add an OMOP CDM v5.4 schema to an existing postgres database with OMOP CDM v5.3 
 1. Open a terminal window
 2. Download the sh (Linux/MacOS) or cmd (Windows) script:
-    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLDET/create-target-schema.sh --output create-target-schema.sh && chmod +x create-target-schema.sh`
-    * Windows: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLDET/create-target-schema.cmd --output create-target-schema.cmd`
+    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/create-target-schema.sh --output create-target-schema.sh && chmod +x create-target-schema.sh`
+    * Windows: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/create-target-schema.cmd --output create-target-schema.cmd`
 3. Execute the script 
     * Linux/MacOS: `./create-target-schema.sh`
     * Windows: `.\create-target-schema.cmd`
@@ -25,8 +25,8 @@
     * `mkdir etl_det`
     * `cd etl_det`
 3. Download the ETL run script:
-    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLDET/runETL.sh --output runETL.sh && chmod +x runETL.sh`
-    * Windows: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLDET/runETL.cmd --output runETL.cmd`
+    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/runETL.sh --output runETL.sh && chmod +x runETL.sh`
+    * Windows: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/runETL.cmd --output runETL.cmd`
 4. Execute the script by running
     * Linux/MacOS: `./runETL.sh`
     * Windows: `.\runETL.cmd`

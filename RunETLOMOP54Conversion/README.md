@@ -6,7 +6,7 @@
 3. The user has access to the Harbor repository containing the ETL image ('etl-omop54').
 4. The HONEUR OMOP CDM database is running in a Docker container named `postgres`:
     * Check this by running `docker ps`. You should see the `postgres` container listed as running and healthy.
-    * See [https://github.com/solventrix/Honeur-Setup/tree/master/local-installation](https://github.com/solventrix/Honeur-Setup/tree/master/local-installation) for more info.
+    * See [https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation](https://github.com/Feder8-Platform/Honeur-Setup/tree/master/local-installation) for more info.
  
 ## Steps to execute the OMOP conversion ETL
 1. Open a terminal window
@@ -14,8 +14,8 @@
     * `mkdir etl_omop54`
     * `cd etl_omop54`
 3. Download the ETL run script:
-    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLOMOP54Conversion/runETL.sh --output runETL.sh && chmod +x runETL.sh`
-    * Windows: `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLOMOP54Conversion/runETL.cmd --output runETL.cmd`
+    * Linux/MacOS: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLOMOP54Conversion/runETL.sh --output runETL.sh && chmod +x runETL.sh`
+    * Windows: `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLOMOP54Conversion/runETL.cmd --output runETL.cmd`
 4. Execute the script by running
     * Linux/MacOS: `./runETL.sh`
     * Windows: `.\runETL.cmd`

@@ -12,7 +12,7 @@ echo "Pull ETL runner image"
 docker pull %REGISTRY%/%REPOSITORY%/%IMAGE%:%TAG%
 
 echo "Download configuration for ETL"
-curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLDET/questions-det.json --output %CD%/questions-det.json
+curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/questions-det.json --output %CD%/questions-det.json
 
 echo "Set privileges for user 'feder8_admin'"
 docker exec -it postgres psql -U postgres -d OHDSI -c "ALTER USER feder8_admin WITH SUPERUSER;"

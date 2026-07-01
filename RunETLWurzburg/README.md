@@ -13,7 +13,7 @@
    * `mkdir etl_wurzburg`
    * `cd etl_wurzburg`
 3. Download the installation script:
-   * `curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/runETL.cmd --output runETL.cmd`
+   * `curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/runETL.cmd --output runETL.cmd`
 4. Execute the `runETL.cmd` script by running `.\runETL.cmd` from inside the directory where the script is located.
 5. The script will request for:
    * the name and tag of the ETL Docker image
@@ -31,7 +31,7 @@ Please review the log files to confirm that no patient-level information was wri
    * `cd etl_wurzburg`
 2. Download the installation script:
    * ```
-     curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/runETL.sh --output runETL.sh && chmod +x runETL.sh
+     curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/runETL.sh --output runETL.sh && chmod +x runETL.sh
      ```
 3. Execute the `runETL.sh` script by running `./runETL.sh` from inside the directory where the script is located.
 4. The script will request for:
@@ -49,7 +49,7 @@ Please review the log files to confirm that no patient-level information was wri
 1. Open a terminal window
 2. Download the export script:
    * ```
-     curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/export-treatment-counts.cmd --output export-treatment-counts.cmd
+     curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/export-treatment-counts.cmd --output export-treatment-counts.cmd
      ```
 3. Execute the `export-treatment-counts.cmd` script from inside the directory where the script is located.
 4. The script will request for:
@@ -63,7 +63,7 @@ Please review the result files to confirm that no patient-level information was 
 1. Open a terminal window
 2. Download the export script:
    * ```
-     curl -L https://raw.githubusercontent.com/solventrix/Honeur-Setup/master/RunETLWurzburg/export-treatment-counts.sh --output export-treatment-counts.sh && chmod +x export-treatment-counts.sh
+     curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLWurzburg/export-treatment-counts.sh --output export-treatment-counts.sh && chmod +x export-treatment-counts.sh
      ```
 3. Execute the `export-treatment-counts.sh` script by running `./export-treatment-counts.sh` from inside the directory where the script is located.
 4. The script will request for:
