@@ -11,6 +11,10 @@ LOG_FOLDER_HOST=${PWD}/logs
 LOG_FOLDER=/var/log/dqp
 QA_FOLDER_HOST=${PWD}/qa
 
+mkdir -p ${LOG_FOLDER_HOST}
+chmod o+w ${LOG_FOLDER_HOST}
+mkdir -p ${QA_FOLDER_HOST}
+chmod o+w ${QA_FOLDER_HOST}
 
 echo "Docker login @ $REGISTRY"
 docker login $REGISTRY
