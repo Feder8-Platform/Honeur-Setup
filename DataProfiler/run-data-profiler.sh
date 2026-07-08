@@ -9,6 +9,12 @@ TAG=$VERSION
 
 docker pull $REGISTRY/$REPOSITORY/$IMAGE:$TAG
 
+# Pre-create with write access for the container's non-root user (feder8,
+# uid 54321) — otherwise Docker creates it root-owned/755 on first mount
+# and save_results() fails with PermissionError.
+mkdir -p ${PWD}/data_profiler_results
+chmod o+w ${PWD}/data_profiler_results
+
 docker run --rm --name data-profiler \
 -v ${PWD}/data_profiler_results:/script/data_profiler_results \
 --env THERAPEUTIC_AREA=HONEUR \
