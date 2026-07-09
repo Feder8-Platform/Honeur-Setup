@@ -3,7 +3,7 @@
 SET REGISTRY=harbor.honeur.org
 SET REPOSITORY=distributed-analytics
 SET IMAGE=data-quality-pipeline
-SET VERSION=1.9
+SET VERSION=1.11
 SET TAG=%VERSION%
 SET QA_FOLDER_HOST=%CD%/qa
 SET LOG_FOLDER_HOST=%CD%/logs
