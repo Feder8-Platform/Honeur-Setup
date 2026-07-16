@@ -27,7 +27,7 @@ echo "INDICATION=mm" >> data-quality-pipeline.env
 echo "QA_FOLDER_HOST=$QA_FOLDER_HOST" >> data-quality-pipeline.env
 echo "LOG_FOLDER_HOST=$LOG_FOLDER_HOST" >> data-quality-pipeline.env
 echo "LOG_FOLDER=$LOG_FOLDER" >> data-quality-pipeline.env
-echo "SCRIPT_UUID=30220b6a-a1c2-4e72-8ad3-f0873f53908b" >> data-quality-pipeline.env
+echo "SCRIPT_UUID=2d05ad3b-7f71-404b-840c-af346a4ef572" >> data-quality-pipeline.env
 
 docker run \
 --rm \

@@ -14,4 +14,4 @@ docker login %REGISTRY%
 
 docker pull %REGISTRY%/%REPOSITORY%/%IMAGE%:%TAG%
 
-docker run --rm --name data-quality-pipeline --env REGISTRY=%REGISTRY% --env THERAPEUTIC_AREA=honeur --env INDICATION=mm --env QA_FOLDER_HOST=%QA_FOLDER_HOST% --env LOG_FOLDER_HOST=%LOG_FOLDER_HOST% --env LOG_FOLDER=%LOG_FOLDER% --env SCRIPT_UUID=30220b6a-a1c2-4e72-8ad3-f0873f53908b -v /var/run/docker.sock:/var/run/docker.sock -v %LOG_FOLDER_HOST%:%LOG_FOLDER% --network feder8-net %REGISTRY%/%REPOSITORY%/%IMAGE%:%TAG%
+docker run --rm --name data-quality-pipeline --env REGISTRY=%REGISTRY% --env THERAPEUTIC_AREA=honeur --env INDICATION=mm --env QA_FOLDER_HOST=%QA_FOLDER_HOST% --env LOG_FOLDER_HOST=%LOG_FOLDER_HOST% --env LOG_FOLDER=%LOG_FOLDER% --env SCRIPT_UUID=2d05ad3b-7f71-404b-840c-af346a4ef572 -v /var/run/docker.sock:/var/run/docker.sock -v %LOG_FOLDER_HOST%:%LOG_FOLDER% --network feder8-net %REGISTRY%/%REPOSITORY%/%IMAGE%:%TAG%
