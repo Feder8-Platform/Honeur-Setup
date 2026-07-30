@@ -6,7 +6,7 @@ DATABASE_NAME=opal
 REGISTRY=harbor.honeur.org
 SITE=oncocologne
 REPOSITORY=ecrf/${SITE}
-TAG=0.2.4
+TAG=0.2.5
 NETWORK=feder8-net
 
 
@@ -33,26 +33,14 @@ fi
 POSTGRES_PASSWORD=$POSTGRES_PASSWORD ./backup_ecrf_db.sh
 
 echo "Stop running eCRF app"
-docker stop honeur_ecrf_app || true
-docker rm honeur_ecrf_app || true
 docker stop ecrf-app || true
 docker rm ecrf-app || true
-
-echo "Stop running NGINX"
-docker stop honeur_ecrf_nginx || true
-docker rm honeur_ecrf_nginx || true
 
 echo "Recreate static volume"
 docker volume rm static_volume || true
 docker volume create static_volume || true
 
 NETWORK=feder8-net
-
-echo "Connect postgres container to network %NETWORK%"
-docker network create $NETWORK || true
-docker network connect $NETWORK honeur_ecrf_postgres || true
-docker network disconnect honeur-net honeur_ecrf_postgres || true
-docker network rm honeur-net || true
 
 echo "Install new eCRF app"
 docker pull $REGISTRY/$REPOSITORY/app:$TAG
