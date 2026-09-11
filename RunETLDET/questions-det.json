@@ -2,7 +2,7 @@
   "questions": [
     { "question":  "ETL version: ",
       "env-var":  "ETL_IMAGE_TAG",
-      "default-value": "v1.1.1"
+      "default-value": "v1.1.3"
     },
     { "question":  "Source database server: ",
       "env-var":  "DB_SRC_SERVER",

@@ -4,7 +4,7 @@ set -ex
 REGISTRY=harbor.honeur.org
 REPOSITORY=library
 IMAGE=etl-runner
-VERSION=1.1.2
+VERSION=1.1.4
 TAG=$VERSION
 
 LOG_FOLDER_HOST=${PWD}/log
@@ -21,19 +21,18 @@ echo "VERBOSITY_LEVEL=INFO" >> etl-runner.env
 echo "LOG_FOLDER_HOST=$LOG_FOLDER_HOST" >> etl-runner.env
 echo "LOG_FOLDER=/log" >> etl-runner.env
 echo "ETL_IMAGE_NAME=etl-det/etl" >> etl-runner.env
-echo "ETL_IMAGE_TAG=v1.1.1" >> etl-runner.env
+echo "ETL_IMAGE_TAG=v1.1.3" >> etl-runner.env
 echo "QA_FOLDER_HOST=$QA_FOLDER_HOST" >> etl-runner.env
 echo "DB_OMOP_DBMS=postgresql" >> etl-runner.env
 echo "DB_OMOP_PORT=5432" >> etl-runner.env
 echo "DB_OMOP_SERVER=postgres" >> etl-runner.env
 echo "DB_OMOP_DBNAME=OHDSI" >> etl-runner.env
-echo "DB_OMOP_SCHEMA=omopcdm54" >> etl-runner.env
+echo "DB_OMOP_SCHEMA=omopcdm" >> etl-runner.env
 echo "DB_SRC_DBMS=postgresql" >> etl-runner.env
 echo "DB_SRC_PORT=5432" >> etl-runner.env
 echo "DB_SRC_SERVER=ecrf-postgres" >> etl-runner.env
-echo "DB_SRC_DBNAME=postgres" >> etl-runner.env
 echo "DB_SRC_SCHEMA=opal" >> etl-runner.env
-echo "RUN_DQD=true" >> etl-runner.env
+echo "RUN_DQD=false" >> etl-runner.env
 
 echo "Download configuration for ETL"
 curl -L https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLDET/questions-det.json --output ${PWD}/questions-det.json
