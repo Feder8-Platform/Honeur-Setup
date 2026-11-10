@@ -2,7 +2,7 @@
   "questions": [
     { "question":  "ETL image tag: ",
       "env-var":  "ETL_IMAGE_TAG",
-      "default-value": "1.5.0"
+      "default-value": "1.6.0"
     },
     { "question": "Input Data folder",
       "env-var": "DATA_FOLDER_HOST"
@@ -12,7 +12,7 @@
     },
     { "question": "Input Data sheet",
       "env-var": "DATA_SHEET",
-      "default-value": "MM_2012_onwards"
+      "default-value": "MM 2012 onwards"
     },
     { "question": "Source encoding",
       "env-var": "ENCODING",
