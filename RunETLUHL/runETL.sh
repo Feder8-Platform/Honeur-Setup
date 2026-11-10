@@ -4,7 +4,7 @@ set -ex
 REGISTRY=harbor.honeur.org
 REPOSITORY=library
 IMAGE=etl-runner
-VERSION=1.1.4
+VERSION=1.1.5
 TAG=$VERSION
 
 DATA_FOLDER_HOST=${PWD}/data
@@ -13,6 +13,9 @@ QA_FOLDER_HOST=${PWD}/qa
 
 echo "Pull ETL runner image"
 docker pull $REGISTRY/$REPOSITORY/$IMAGE:$TAG
+
+echo "Create the log and QA folders, owned by the current user"
+mkdir -p "$LOG_FOLDER_HOST" "$QA_FOLDER_HOST"
 
 echo "Download ETL questions"
 curl -fsSL https://raw.githubusercontent.com/Feder8-Platform/Honeur-Setup/master/RunETLUHL/questions.json --output questions.json
@@ -23,6 +26,8 @@ echo "REGISTRY=$REGISTRY" >> etl-runner.env
 echo "LOG_LEVEL=INFO" >> etl-runner.env
 echo "LOG_FOLDER_HOST=$LOG_FOLDER_HOST" >> etl-runner.env
 echo "LOG_FOLDER=/var/log" >> etl-runner.env
+# The ETL container runs as the host user, so it can write to the log folder and the files there belong to that user
+echo "ETL_USER=$(id -u):$(id -g)" >> etl-runner.env
 echo "ETL_IMAGE_NAME=etl-uhl/etl" >> etl-runner.env
 echo "ETL_IMAGE_TAG=1.6.0" >> etl-runner.env
 echo "DATA_FOLDER_HOST=$DATA_FOLDER_HOST" >> etl-runner.env
